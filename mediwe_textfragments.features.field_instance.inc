@@ -51,7 +51,44 @@ function mediwe_textfragments_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 4,
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-text_fragment-field_application'.
+  $field_instances['node-text_fragment-field_application'] = array(
+    'bundle' => 'text_fragment',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_application',
+    'label' => 'Toepassing',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 2,
     ),
   );
 
@@ -91,7 +128,7 @@ function mediwe_textfragments_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'civicrm_contact_ref_autocomplete',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -127,8 +164,8 @@ function mediwe_textfragments_field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 2,
+      'type' => 'options_select',
+      'weight' => 3,
     ),
   );
 
@@ -179,6 +216,7 @@ function mediwe_textfragments_field_default_field_instances() {
   t('Referentie naar het tekst fragment om in de code te gebruiken.');
   t('Taal');
   t('Text');
+  t('Toepassing');
 
   return $field_instances;
 }
