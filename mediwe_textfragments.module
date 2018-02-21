@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Mediwe Textfragments feature.
+ */
+
+include_once 'mediwe_textfragments.features.inc';
